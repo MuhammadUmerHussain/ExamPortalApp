@@ -14,7 +14,9 @@
 	<name>ExamAppBackend</name>
 	<description>This is the backed files for exam portal website created by Umer Hussain</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>17.0.7</java.version>
+		<maven.compiler.source>1.5</maven.compiler.source>
+		<maven.compiler.target>1.5</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
