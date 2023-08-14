@@ -39,4 +39,25 @@ public class UserImplementation implements UserService {
         }
         return local;
     }
+
+    public User getUser(String Username){
+
+        User u = userR.findByUsername(Username);
+
+        return u;
+}
+    public User deleteUser(String Username) throws Exception {
+
+        User u=userR.findByUsername(Username);
+        if(u!=null)
+        {
+            userR.delete(u);
+
+
+        }
+        else{
+            throw new Exception("User not found");
+        }
+        return u;
+    }
 }
